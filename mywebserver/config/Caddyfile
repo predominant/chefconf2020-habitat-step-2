@@ -1,0 +1,2 @@
+:{{cfg.http.port}}
+root {{pkg.path}}/public

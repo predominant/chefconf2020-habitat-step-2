@@ -1,2 +1,3 @@
-:{{cfg.http.port}}
+:{{cfg.port}}
 root {{pkg.path}}/public
+header / X-Chefconf-Webserver "{{sys.hostname}} ({{sys.ip}})"

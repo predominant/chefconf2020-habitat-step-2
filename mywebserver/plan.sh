@@ -1,6 +1,6 @@
 # mywebserver/plan.sh
 pkg_name=mywebserver
-pkg_origin=grahamweldon
+pkg_origin=chefconf2020
 pkg_version="0.1.0"
 pkg_maintainer="Graham Weldon <graham@grahamweldon.com>"
 pkg_license=("Apache-2.0")

@@ -1,4 +1,4 @@
-# ChefConf 2020 Chef Habitat Demonstration
+# ChefConf 2020 Habitat Demonstration
 
 ## Habitat Studio Testing
 
@@ -31,5 +31,20 @@ build mywebserver; source results/last_build.env; hab svc load ${pkg_ident}; bui
 
 ## Virtualbox cluster
 
+The virtualbox cluster is all-in-one and designed to be started simply with:
 
+```
+vagrant up
+```
 
+Once boot is complete, you can get a list of Virtual Machines with:
+
+```
+vagrant status
+```
+
+And you can ssh into them by name:
+
+```
+vagrant ssh web2
+```

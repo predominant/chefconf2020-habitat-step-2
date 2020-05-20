@@ -1,0 +1,6 @@
+#!/bin/sh
+
+hab pkg install core/nano --binlink
+hab pkg install core/curl --binlink
+hab pkg install core/jq-static --binlink
+export EDITOR=vim

@@ -52,7 +52,7 @@ Vagrant.configure('2') do |config|
   (1..3).each do |i|
     config.vm.define "web#{i}" do |m|
       m.vm.provision 'shell', inline: <<-SHELL
-        hab svc load chefconf2020/mywebserver
+        hab svc load chefconf2020/mywebserver --strategy at-once --channel unstable
       SHELL
     end
   end
@@ -60,7 +60,7 @@ Vagrant.configure('2') do |config|
   (1..2).each do |i|
     config.vm.define "lb#{i}" do |m|
       m.vm.provision 'shell', inline: <<-SHELL
-        hab svc load chefconf2020/myloadbalancer --bind backend:mywebserver.default
+        hab svc load chefconf2020/myloadbalancer --bind backend:mywebserver.default --strategy at-once --channel stable
       SHELL
     end
   end
